@@ -6,11 +6,12 @@ export default {
   buildOptions: {
     // site: 'http://example.com',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
     sitemap: true,         // Generate sitemap (set to "false" to disable)
+    site: 'http://empfang.newtelco.local'
   },
   devOptions: {
     // hostname: 'localhost',  // The hostname to run the dev server on. 
     // port: 3000,             // The port to run the dev server on.
-    // tailwindConfig: '',     // Path to tailwind.config.js if used, e.g. './tailwind.config.js'
+    tailwindConfig: './tailwind.config.js'
   },
-  renderers: [],
+  renderers: ['@astrojs/renderer-svelte'],
 };

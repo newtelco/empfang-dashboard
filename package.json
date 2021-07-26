@@ -1,12 +1,67 @@
 {
-  "name": "@example/starter",
+  "name": "@newtelco/reception",
   "version": "0.0.1",
-  "private": true,
+  "description": "Reception Static Video Dashboard",
+  "author": {
+    "email": "ndomino@newtelco.de",
+    "name": "Nico Domino @ndom91"
+  },
+  "homepage": "https://ndo.dev/",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "dashboard",
+    "ffmpeg",
+    "astro",
+    "svelte"
+  ],
+  "repository": "https://github.com/newtelco/empfang-dashboard.git",
+  "bugs": "https://github.com/newtelco/empfang-dashboard/issues",
   "scripts": {
-    "start": "astro dev",
+    "dev": "astro dev --port 3005",
     "build": "astro build"
   },
+  "dependencies": {
+    "@astrojs/renderer-svelte": "^0.1.1"
+  },
   "devDependencies": {
-    "astro": "^0.17.3"
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "astro": "^0.17.3",
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.31.0",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "simple-git-hooks": "^2.5.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "eslintConfig": {
+    "extends": "next",
+    "overrides": [
+      {
+        "files": [
+          "**/api/**/*.[jt]s"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": [
+            "warn",
+            {
+              "allowArrowFunction": true
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx --no-install commitlint --edit \"$1\""
   }
 }

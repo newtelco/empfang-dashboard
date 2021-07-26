@@ -1,40 +1,25 @@
-# Welcome to [Astro](https://astro.build)
+# NewTelco Empfang Video Dashboard
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Video Dashboard for Reception at NewTelco GmbH 🚀
 
-## 🚀 Project Structure
+## 🗄 Built With
 
-Inside of your Astro project, you'll see the following folders and files:
+- Astro
+- Svelte
+- TailwindCSS
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+This is a small static video streaming dashboard, built to experiment with Astro and Svelte primarily!
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🧞 Getting Started
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. `git clone https://github.com/newtelco/empfang-dashboard`
+2. `cd empfang-dashboard && npm install`
+3. `npm start`
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 👀 Contributing
 
-## 🧞 Commands
+We're open to any and all contributions!
 
-All commands are run from the root of the project, from a terminal:
+## 📋 License
 
-| Command         | Action                                      |
-|:----------------|:--------------------------------------------|
-| `npm install`   | Installs dependencies                       |
-| `npm start`     | Starts local dev server at `localhost:3000` |
-| `npm run build` | Build your production site to `./dist/`     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).
+MIT
